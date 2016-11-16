@@ -1016,6 +1016,8 @@ class PDF
             $arr_ttf_stat = stat($str_ttf_filename);
             if (file_exists($str_unicode_filename . '.mtx.php')) {
                 include($str_unicode_filename . '.mtx.php');
+            } else {
+                //$str_unicode_filename = $this->getFontWritePath() . $str_unicode_file;
             }
 
             $arr_descriptors = [];
